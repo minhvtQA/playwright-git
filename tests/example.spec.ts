@@ -34,3 +34,8 @@ test("get started link", async ({ page }, testInfo) => {
     page.getByRole("heading", { name: "Installation" }),
   ).toBeVisible();
 });
+
+test("Tinh nang moi", async ({ page }, testInfo) => {
+  await page.goto("https://playwright.dev/");
+  await page.screenshot();
+});
